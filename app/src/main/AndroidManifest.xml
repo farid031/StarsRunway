@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.farid.starsrunway">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".login.RegisterActivity"
+            android:label="Register New User">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- Mainmenu Activity -->
+        <activity
+            android:name=".MainmenuActivity"
+            android:label="Menu Utama">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- Submenu Activity -->
+        <activity
+            android:name=".SubmenuactivityActivity"
+            android:label="Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- Visit Activity -->
+        <activity
+            android:name=".submenuactivity.VisitActivity"
+            android:label="Visit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- ReadIn Activity -->
+        <activity
+            android:name=".crud.visit.ReadInActivity"
+            android:label="Data Invisit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- ViewData Activity -->
+        <activity
+            android:name=".crud.visit.ViewdataInActivity"
+            android:label="Detail Data Visit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- CreateOut Activity -->
+        <activity
+            android:name=".crud.visit.CreateOutActivity"
+            android:label="Create Data Outvisit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- CreateIn Activity -->
+        <activity
+            android:name=".crud.visit.CreateInActivity"
+            android:label="Create Data Invisit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sampling Activity -->
+        <activity
+            android:name=".submenuactivity.SamplingActivity"
+            android:label="Submenu Sampling">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- CreateCome Activity -->
+        <activity
+            android:name=".crud.sampling.CreateComeSamplingActivity"
+            android:label="Create Data Come">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- ReadOutVisit Activity -->
+        <activity
+            android:name=".crud.visit.ReadOutActivity"
+            android:label="Data Outvisit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+        <!-- View Data Outvisit Activity -->
+        <activity
+            android:name=".crud.visit.ViewDataOutActivity"
+            android:label="Detail Data Outvisit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud.sampling.ReadComeSamplingActivity"
+            android:label="Detail Data Comesampling">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud.sampling.ViewDataComeSamplingActivity"
+            android:label="Detail Data Comesampling">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud.sampling.ReadGoSamplingActivity"
+            android:label="Data Go sampling">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud.sampling.ViewDataGoSamplingActivity"
+            android:label="Detail Data Go sampling">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud.sampling.CreateGoSamplingActivity"
+            android:label="Create Data Go sampling">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".submenuactivity.PiActivity"
+            android:label="Menu Pi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud.pi.ReadPiActivity"
+            android:label="Data Pi" />
+        <activity
+            android:name=".crud.pi.ViewDataPiActivity"
+            android:label="Detail Data Pi" />
+        <activity
+            android:name=".crud.pi.ReadResultActivity"
+            android:label="Data Result" />
+        <activity android:name=".crud.pi.ViewDataResultActivity" />
+        <activity android:name=".crud.pi.CreatePiActivity" />
+        <activity android:name=".crud.pi.CreateResultActivity" />
+        <activity android:name=".crud.toko.TokoActivity" />
+        <activity android:name=".crud.toko.ReadTokoActivity" />
+        <activity
+            android:name=".report.ReportActivity"
+            android:label="Menu Report">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".report.hitlist.ReadHitlistReportActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".maps.MapsViewInActivity"
+            android:label="@string/title_activity_maps_view_in" />
+        <activity android:name=".report.best_seller.ReadBestSellerActivity"></activity>
+    </application>
+
+</manifest>
